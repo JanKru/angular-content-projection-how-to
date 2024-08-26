@@ -1,13 +1,12 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { HeadlineComponent } from './shared/headline';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
+  imports: [HeadlineComponent],
+  template: '<app-headline>Content Projection</app-headline>',
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'angular-content-projection-how-to';
 }
